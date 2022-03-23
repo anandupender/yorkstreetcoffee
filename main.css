@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Nighty;
+    src: url("fonts/Nighty.otf") format("opentype");
+}
+
+body{
+    font-family: Nighty;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8DCDA;
+    color: #1C193F;
+}
+
+#main{
+    width: 280px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main img{
+    width:100%;
+    border-radius: 16px 16px 0 0;
+}
+
+h1{
+    font-size: 42px;
+    margin: 0;
+    margin-top: -18px;
+    text-shadow: -4px 4px 0 #F8DCDA,
+				  4px 4px 0 #F8DCDA,
+				 4px -4px 0 #F8DCDA,
+				-4px -4px 0 #F8DCDA;
+}
+h2{
+    font-size: 18px;
+    margin: 0;
+}
+h3{
+    font-size: 14px;
+    text-align:justify;
+    margin: 0;
+    line-height: 80%;
+}
+h4{
+    font-size: 32px;
+    color: #F8DCDA;
+    text-shadow: -2px 2px 0 #1C193F,
+    2px 2px 0 #1C193F,
+   2px -2px 0 #1C193F,
+  -2px -2px 0 #1C193F;
+}
+
+a, a:visited{
+    text-decoration: none; /* no underline */
+    color: #F8DCDA;
+}
