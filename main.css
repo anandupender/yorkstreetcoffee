@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: Nighty;
+    font-family: Nighty, sans-serif;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -63,10 +63,12 @@ h1{
 }
 h2{
     width: 115%;
-    font-size: 21px;
+    font-size: 20px;
     margin: 0;
     text-align:center;
     font-weight: 400;
+    line-height: 85%;
+    text-align: justify;
 }
 h3{
     width: 115%;
@@ -74,9 +76,9 @@ h3{
     text-align:justify;
     margin: 0;
     line-height: 75%;
-    opacity: .7;
     margin-top: 8px;
     font-weight: 400;
+    opacity: .7;
 }
 h4{
     font-size: 32px;
