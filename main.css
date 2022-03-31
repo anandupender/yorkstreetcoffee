@@ -34,6 +34,21 @@ body{
     border: 2px solid #1C193F;
     border-bottom: 0px;
     object-fit: cover;
+    height: 0;
+    opacity: 0;
+    animation: reveal 1000ms ease-in-out 900ms forwards;
+}
+
+@keyframes reveal {
+    from{
+        height: 0px;
+        opacity: 0;
+    }
+    to{
+        height: 200px;
+        opacity: 1;
+    }
+    
 }
 #main #logo{
     width: 120%;
@@ -113,7 +128,7 @@ a, a:visited{
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: moveDown 500ms ease-out 2s forwards, pulse 750ms linear 2500ms infinite alternate;
+    animation: moveDown 500ms ease-out 3s forwards, pulse 750ms linear 3100ms infinite alternate;
     opacity: 0;
     font-family: sans-serif;
 }
