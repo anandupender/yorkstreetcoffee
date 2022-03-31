@@ -29,14 +29,16 @@ body{
 #main img{
     width:100%;
 }
-#main #hero{
+#main .hero{
     border-radius: 16px 16px 0 0;
     border: 2px solid #1C193F;
     border-bottom: 0px;
+    object-fit: cover;
 }
 #main #logo{
     width: 120%;
     margin-top: -18px;
+    z-index: 1000;
 }
 
 h1{
