@@ -7,23 +7,52 @@ body{
     font-family: Nighty, sans-serif;
     margin: 0;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #F8DCDA;
     color: #1C193F;
 }
 
 #main{
+    margin-top: 24vh;
     width: 290px;
     max-width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+#imageContainer{
+    margin-top: 36px;
+    width: calc(290px * 1.15);
+    opacity: 0;
+    animation: opacityChange 1000ms ease-in-out 900ms forwards;
+}
+
+@keyframes opacityChange {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+#imageContainer img{
+    width: 80%;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    filter: grayscale(1);
+}
+#imageContainer img.left{
+    float:left;
+}
+#imageContainer img.right{
+    float:right;
 }
 
 #main img{
@@ -95,7 +124,7 @@ a, a:visited{
 }
 
 #instaButton{
-    position: absolute;
+    position: fixed;
     right: 8vw;
     width: 58px;
     height: 58px;
