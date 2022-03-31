@@ -82,7 +82,7 @@ a, a:visited{
     right: 8vw;
     width: 52px;
     height: 52px;
-    bottom: 40px;
+    bottom: 10px;
     background-color: #C6473C;
     border-radius: 50%;
     display: flex;
@@ -174,7 +174,7 @@ a, a:visited{
 }
 .timeLocation{
     font-size: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 @media only screen and (min-width: 600px) {
