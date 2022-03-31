@@ -17,7 +17,7 @@ body{
 }
 
 #main{
-    width: 260px;
+    width: 290px;
     max-width: 90vw;
     display: flex;
     flex-direction: column;
@@ -48,14 +48,14 @@ h1{
 }
 h2{
     width: 115%;
-    font-size: 19px;
+    font-size: 21px;
     margin: 0;
     text-align:center;
     font-weight: 400;
 }
 h3{
     width: 115%;
-    font-size: 18px;
+    font-size: 21px;
     text-align:justify;
     margin: 0;
     line-height: 75%;
@@ -102,10 +102,10 @@ a, a:visited{
 }
 
 #nextEvent{
-    width: calc(90vw - 12px - 12px);
-    max-width: 360px;
+    width: calc(100vw - 48px);
+    max-width: 400px;
     position: absolute;
-    /* background-color: #1C193F; */
+    background-color: #F8DCDA;
     border: 2px solid #1C193F;
     color: #1C193F;
     padding: 8px 12px 8px 12px;
@@ -162,8 +162,19 @@ a, a:visited{
     font-weight: 700;
     font-size: 15px;
 }
+#calLink{
+    color: #C6473C;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+}
+#calLink::after{
+    content:" -->";
+    text-decoration:none;
+}
 .timeLocation{
     font-size: 15px;
+    margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 600px) {
