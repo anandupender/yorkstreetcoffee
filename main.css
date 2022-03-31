@@ -75,7 +75,7 @@ a, a:visited{
     right: 8vw;
     width: 46px;
     height: 46px;
-    bottom: 20vw;
+    bottom: 60px;
     background-color: #C6473C;
     border-radius: 50%;
     display: flex;
@@ -96,6 +96,7 @@ a, a:visited{
 
 #nextEvent{
     width: calc(90vw - 12px - 12px);
+    max-width: 360px;
     position: absolute;
     /* background-color: #1C193F; */
     border: 2px solid #1C193F;
@@ -156,3 +157,16 @@ a, a:visited{
 .timeLocation{
     font-size: 14px;
 }
+
+@media only screen and (min-width: 600px) {
+    #main{
+        transform: scale(1.3);
+    }
+    #instaButton{
+        width: 80px;
+        height: 80px;
+    }
+    #instaButton svg{
+        transform: scale(1.5);
+    }
+  }
