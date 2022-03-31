@@ -80,9 +80,9 @@ a, a:visited{
 #instaButton{
     position: absolute;
     right: 8vw;
-    width: 52px;
-    height: 52px;
-    bottom: 10px;
+    width: 58px;
+    height: 58px;
+    bottom: 18px;
     background-color: #C6473C;
     border-radius: 50%;
     display: flex;
@@ -113,7 +113,7 @@ a, a:visited{
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: moveDown 500ms ease-out 2s forwards;
+    animation: moveDown 500ms ease-out 2s forwards, pulse 750ms linear 2500ms infinite alternate;
     opacity: 0;
     font-family: sans-serif;
 }
@@ -126,14 +126,24 @@ a, a:visited{
     to{
         top: 12px;
         opacity: 1;
+    }  
+}
+
+@keyframes pulse {
+    from{
+        border: 2px solid #1C193F;
+        /* opacity: .9; */
     }
-    
+    to{
+        border: 2px solid #1C193F44;
+        /* opacity: .65; */
+    }  
 }
 
 .cal{
     border-radius: 3px;
     text-align: center;
-    width: 60px;
+    width: 58px;
     height: calc(60px - 8px + 2px);
     background-color: #F8DCDA;
     margin-right: 12px;
