@@ -177,7 +177,7 @@ a, a:visited{
     align-items: center;
     animation: moveDown 500ms ease-out 3s forwards, pulse 750ms linear 3100ms infinite alternate;
     opacity: 0;
-    font-family: sans-serif;
+    font-family: monospace;
 }
 
 @keyframes moveDown {
