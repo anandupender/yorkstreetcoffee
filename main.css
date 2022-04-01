@@ -45,13 +45,12 @@ body{
     width: 80%;
     margin-bottom: 48px;
     border-radius: 8px;
-    filter: grayscale(1);
     border: 2px solid #1C193F;
 }
-#imageContainer img.left{
+#imageContainer img:nth-child(odd){
     float:left;
 }
-#imageContainer img.right{
+#imageContainer img:nth-child(even){
     float:right;
 }
 
