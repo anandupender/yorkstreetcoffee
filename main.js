@@ -11,3 +11,11 @@ function changeText(){
     }
     callout.innerHTML = texts[currPos];
 }
+
+// Load video animation once video canplay
+const video = document.querySelector('.hero');
+
+video.addEventListener('canplay', (event) => {
+  console.log("video loaded");
+  video.style.animation = "reveal 1000ms ease-in-out forwards"
+});

@@ -38,8 +38,7 @@ body{
     }
     to{
         opacity: 1;
-    }
-    
+    }   
 }
 
 #imageContainer img{
@@ -66,7 +65,7 @@ body{
     object-fit: cover;
     height: 0;
     opacity: 0;
-    animation: reveal 1000ms ease-in-out 900ms forwards;
+    /* animation: reveal 1000ms ease-in-out 900ms forwards; Added in JS on video load */ 
 }
 
 @keyframes reveal {
