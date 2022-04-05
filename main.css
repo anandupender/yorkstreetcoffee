@@ -17,7 +17,7 @@ body{
 }
 
 #main{
-    margin-top: 124px;
+    margin-top: 136px;
     width: 290px;
     max-width: 90vw;
     display: flex;
@@ -150,7 +150,7 @@ a, a:visited{
 #openToAll{
     height: 58px;
     width: calc(100% - 24px);
-    margin-top: 48px;
+    margin-top: 36px;
     background-color: #1C193F;
     border-radius: 16px;
     padding-left: 12px;
@@ -175,7 +175,7 @@ a, a:visited{
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: moveDown 500ms ease-out 2s forwards, pulse 750ms linear 2100ms infinite alternate;
+    /* animation: moveDown 500ms ease-out 2s forwards, pulse 750ms linear 2100ms infinite alternate; */
     opacity: 0;
     font-family: monospace;
 }
