@@ -5,6 +5,7 @@
 
 body{
     font-family: Nighty, sans-serif;
+    overflow-x: hidden;
     margin: 0;
     width: 100vw;
     display: flex;
@@ -16,7 +17,7 @@ body{
 }
 
 #main{
-    margin-top: 24vh;
+    margin-top: 124px;
     width: 290px;
     max-width: 90vw;
     display: flex;
@@ -91,7 +92,7 @@ h1{
 }
 h2{
     width: 100%;
-    font-size: 20px;
+    font-size: 24.5px;
     margin: 0;
     text-align:center;
     font-weight: 400;
@@ -100,10 +101,10 @@ h2{
 }
 h3{
     width: 100%;
-    font-size: 21px;
+    font-size: 20.3px;
     text-align:justify;
     margin: 0;
-    line-height: 75%;
+    line-height: 80%;
     margin-top: 8px;
     font-weight: 400;
     opacity: .7;
@@ -147,10 +148,9 @@ a, a:visited{
 }
 
 #openToAll{
-    position: fixed;
-    left: calc((100vw - 290px * 1.15) / 2);
     height: 58px;
-    bottom: 18px;
+    width: calc(100% - 24px);
+    margin-top: 48px;
     background-color: #1C193F;
     border-radius: 16px;
     padding-left: 12px;
@@ -160,7 +160,7 @@ a, a:visited{
     align-items: center;
     color: #F8DCDA;
     text-align: center;
-    font-size: 20px;
+    font-size: 24.5px;
 }
 
 #nextEvent{
@@ -171,11 +171,11 @@ a, a:visited{
     border: 2px solid #1C193F;
     color: #1C193F;
     padding: 8px 12px 8px 12px;
-    border-radius: 6px;
+    border-radius: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: moveDown 500ms ease-out 3s forwards, pulse 750ms linear 3100ms infinite alternate;
+    animation: moveDown 500ms ease-out 2s forwards, pulse 750ms linear 2100ms infinite alternate;
     opacity: 0;
     font-family: monospace;
 }
@@ -203,9 +203,10 @@ a, a:visited{
 }
 
 .cal{
-    border-radius: 3px;
+    border-radius: 16px;
+    overflow: hidden;
     text-align: center;
-    width: 58px;
+    width: 56px;
     height: calc(60px - 8px + 2px);
     background-color: #F8DCDA;
     margin-right: 12px;
@@ -251,6 +252,7 @@ a, a:visited{
 
 @media only screen and (min-width: 600px) {
     #main{
+        margin-top: 170px;
         transform: scale(1.1);
     }
     #imageContainer{
@@ -262,8 +264,7 @@ a, a:visited{
         right: 12vw;
     }
     #openToAll{
-        height: 80px;
-        left: 12vw;
+        height: 60px;
     }
     #instaButton svg{
         transform: scale(1.5);
