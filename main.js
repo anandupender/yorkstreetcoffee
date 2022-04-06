@@ -3,6 +3,7 @@ var texts = ["COME ONE <BR/> COME ALL", "BRING A<BR/> FRIEND","OPEN TO <BR/> ALL
 var currPos = 0;
 
 window.setInterval(changeText,1600);
+window.scrollTo(0, 0);
 
 function changeText(){
     currPos++;
