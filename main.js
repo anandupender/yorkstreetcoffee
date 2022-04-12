@@ -20,9 +20,9 @@ const nextEvent = document.querySelector('#nextEvent');
 
 video.addEventListener('canplay', (event) => {
   console.log("video loaded");
+  heroImage.style.display="none";
   video.style.opacity = "1";
   video.style.height = "200px";
-  heroImage.style.display="none";
 });
 
 let onTopSection = true;

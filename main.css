@@ -77,7 +77,6 @@ body{
     object-fit: cover;
     opacity: 0;
     height: 0px;
-    animation: reveal 1000ms ease-in-out 900ms forwards;
 }
 
 @keyframes reveal {
