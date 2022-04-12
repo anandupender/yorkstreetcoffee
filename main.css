@@ -18,7 +18,7 @@ body{
 }
 
 #main{
-    margin-top: 176px;
+    margin-top: 164px;
     width: 290px;
     max-width: 90vw;
     display: flex;
@@ -111,16 +111,14 @@ h2{
     text-align: justify;
 }
 h3{
-    width: calc(100%*.85);
-    font-size: 20.3px;
+    width: 100%;
+    font-size: 24px;
     text-align:justify;
     margin: 0;
     line-height: 80%;
     margin-top: 8px;
-    margin-left: calc(100% *.075);
     margin-bottom: 32px;
     font-weight: 400;
-    opacity: .7;
 }
 h4{
     font-size: 32px;
@@ -166,14 +164,13 @@ a, a:visited{
     100%{
         transform: rotate(360deg);
     }
-    
 }
 
 #openToAll{
     height: 58px;
     width: calc(100% - 24px);
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     background-color: #1C193F;
     border-radius: 16px;
     padding-left: 12px;
@@ -259,6 +256,7 @@ a, a:visited{
 .next{
     font-weight: 700;
     font-size: 15px;
+    color: #1C193F;
 }
 #calLink{
     color: #C6473C;
@@ -273,6 +271,7 @@ a, a:visited{
 .timeLocation{
     font-size: 15px;
     margin-bottom: 4px;
+    color: #1C193F;
 }
 
 @media only screen and (min-width: 600px) {
