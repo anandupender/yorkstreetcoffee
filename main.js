@@ -24,3 +24,23 @@ video.addEventListener('canplay', (event) => {
   video.style.height = "200px";
   heroImage.style.display="none";
 });
+
+let onTopSection = true;
+let y = window.scrollY || window.pageYOffset;
+if(y <= 10){
+    onTopSection = true;
+}else{
+    onTopSection = false;
+}
+
+window.addEventListener('scroll', () => {
+  let y = window.scrollY || window.pageYOffset
+  y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+  if(y >= 800 && onTopSection){
+    document.body.style.backgroundColor = "#1C193F";
+    onTopSection = false;
+}else if (y < 800 && !onTopSection){
+    document.body.style.backgroundColor = "#F8DCDA"; 
+    onTopSection = true;
+  }
+})
