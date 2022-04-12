@@ -14,11 +14,13 @@ function changeText(){
 }
 
 // Load video animation once video canplay
-const video = document.querySelector('.hero');
+const video = document.querySelector('#heroVideo');
+const heroImage = document.querySelector('#heroImage');
 const nextEvent = document.querySelector('#nextEvent');
 
 video.addEventListener('canplay', (event) => {
   console.log("video loaded");
-  video.style.animation = "reveal 1000ms ease-in-out forwards";
-  nextEvent.style.animation = "moveDown 500ms ease-out 1400ms forwards, pulse 750ms linear 1600ms infinite alternate";
+  video.style.opacity = "1";
+  video.style.height = "200px";
+  heroImage.style.display="none";
 });
