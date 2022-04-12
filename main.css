@@ -18,7 +18,7 @@ body{
 }
 
 #main{
-    margin-top: 136px;
+    margin-top: 176px;
     width: 290px;
     max-width: 90vw;
     display: flex;
@@ -136,6 +136,8 @@ hr{
     background-color: #C6473C;
     height: 2px;
     border: none;
+    opacity: 0;
+    animation: opacityChange 1000ms ease-in-out 1800ms forwards;
 }
 
 a, a:visited{
@@ -182,6 +184,8 @@ a, a:visited{
     color: #F8DCDA;
     text-align: center;
     font-size: 24.5px;
+    opacity: 0;
+    animation: opacityChange 1000ms ease-in-out 1800ms forwards;
 }
 
 #nextEvent{
